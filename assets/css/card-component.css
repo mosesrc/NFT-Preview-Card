@@ -1,0 +1,51 @@
+/* Classes */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.card-body {
+  margin: auto;
+  padding: 50px;
+  width: 50%;
+  text-align: center;
+  border: 1px solid black;
+}
+
+.mainImage {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  width: 80%;
+}
+
+.littleStuff {
+  width: 80%;
+  margin: 30px auto;
+  border: 1px solid black;
+}
+
+.littleStuff > p {
+  display: inline-block;
+  justify-content: space-between;
+  border: 1px solid black;
+}
+
+/* Element Selectors */
+h1 {
+  text-align: left;
+  margin: 30px auto;
+  padding: 5px;
+  width: 80%;
+  border: 1px solid black;
+}
+
+h1 ~ p {
+  width: 80%;
+  margin: 20px auto;
+  text-align: left;
+  border: 1px solid black;
+}

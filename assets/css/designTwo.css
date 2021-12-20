@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+/* ******************* DEFAULT OPTIONS ******************* */
+
+* {
+  box-sizing: border-box;
+  /* border: 1px solid black; */
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  font-family: 'Outfit', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(217, 54%, 11%);
+}
+
+p {
+  font-size: 18px;
+}
+
+/* ******************* POSITIONING ******************* */
+
+h1 {
+  height: 28px;
+  width: 302px;
+  font-size: 22px;
+  font-weight: 600;
+  color: hsl(0, 0%, 100%);
+}
+
+h1 + p {
+  height: 52px;
+  width: 302px;
+  font-weight: 300;
+  color: hsl(215, 51%, 70%);
+}
+
+.card-body {
+  height: 596px;
+  width: 350px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 15px;
+  background-color: hsl(216, 50%, 16%);
+}
+
+.littleStuff {
+  display: flex;
+  justify-content: space-between;
+  height: 30px;
+  width: 302px;
+  display: flex;
+  align-items: center;
+}
+
+.littleStuff p:nth-child(1) {
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  color: hsl(178, 100%, 50%);
+}
+.littleStuff p:last-child {
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+  color: hsl(215, 51%, 70%);
+}
+
+.line {
+  width: 302px;
+  border-bottom: 1px solid hsl(215, 32%, 27%);
+  /* border-style: groove; */
+}
+
+.creator {
+  font-weight: 300;
+  height: 33px;
+  width: 302px;
+  display: flex;
+  align-items: center;
+  color: hsl(0, 0%, 100%);
+}
+
+.creator span {
+  color: hsl(215, 51%, 70%);
+  margin-right: 5px;
+}
+
+.attribution {
+  font-size: 14px;
+  margin-bottom: 5px;
+  text-align: center;
+  width: 220px;
+}
+
+/* ******************* IMAGES ******************* */
+
+.mainImage {
+  height: 302px;
+  width: 302px;
+  margin-top: 23px;
+  border-radius: 8px;
+}
+
+.littleStuff img[alt='Ethereum'] {
+  height: 18px;
+  width: 11px;
+  margin-right: 5px;
+}
+
+.littleStuff img[alt='Clock'] {
+  height: 16px;
+  width: 16px;
+  margin-right: 5px;
+}
+
+.headShot {
+  height: 33px;
+  width: 33px;
+  margin-right: 15px;
+  border: 1px solid hsl(0, 0%, 100%);
+  border-radius: 33px;
+}

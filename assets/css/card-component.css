@@ -1,3 +1,14 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 18px;
+  font-family: 'Outfit', sans-serif;
+  padding: 350px 135px;
+  background-color: hsl(217, 54%, 11%);
+}
+
 /* Classes */
 .attribution {
   font-size: 11px;
@@ -8,44 +19,81 @@
 }
 
 .card-body {
-  margin: auto;
-  padding: 50px;
-  width: 50%;
+  margin: 40px auto;
+  padding: 2em;
+  width: 40%;
   text-align: center;
-  border: 1px solid black;
+  border-radius: 50px;
+  background-color: hsl(216, 50%, 16%);
+  box-sizing: border-box;
 }
 
 .mainImage {
   display: block;
   margin-right: auto;
   margin-left: auto;
-  width: 80%;
+  width: 100%;
+  padding: auto;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.headShot {
+  height: 10%;
+  width: 10%;
+  border-radius: 50%;
+  margin-right: 20px;
+  border: 1px solid white;
 }
 
 .littleStuff {
-  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
   margin: 30px auto;
-  border: 1px solid black;
+  border-bottom: 3px solid hsl(215, 32%, 27%);
 }
 
 .littleStuff > p {
   display: inline-block;
-  justify-content: space-between;
-  border: 1px solid black;
+  padding: 20px 0;
+  text-align: center;
+}
+
+div.littleStuff p:nth-child(1) {
+  color: hsl(178, 100%, 50%);
+}
+
+div.littleStuff p:nth-child(2) {
+  color: hsl(215, 51%, 70%);
+}
+
+.creator {
+  display: flex;
+  align-items: center;
+}
+
+.creator span {
+  margin-right: 5px;
+  color: hsl(215, 51%, 70%);
 }
 
 /* Element Selectors */
 h1 {
   text-align: left;
   margin: 30px auto;
-  padding: 5px;
-  width: 80%;
-  border: 1px solid black;
+  padding: 5px 0;
+  width: 100%;
+  color: hsl(0, 0%, 100%);
 }
 
 h1 ~ p {
-  width: 80%;
+  width: 100%;
   margin: 20px auto;
   text-align: left;
-  border: 1px solid black;
+  color: hsl(0, 0%, 100%);
+}
+
+h1 + p {
+  color: hsl(215, 51%, 70%);
 }

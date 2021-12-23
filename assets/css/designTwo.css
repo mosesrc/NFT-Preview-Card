@@ -35,6 +35,7 @@ h1 {
 h1 span:hover {
   color: hsl(178, 100%, 50%);
   cursor: pointer;
+  transition: 0.8s ease;
 }
 
 h1 + p {
@@ -47,7 +48,7 @@ h1 + p {
 .card-body {
   height: 596px;
   width: 350px;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -105,6 +106,7 @@ h1 + p {
 #name:hover {
   color: hsl(178, 100%, 50%);
   cursor: pointer;
+  transition: 0.8s ease;
 }
 
 .attribution {
@@ -114,25 +116,49 @@ h1 + p {
   width: 220px;
 }
 
+.attribution a {
+  color: hsl(215, 51%, 70%);
+}
+
 /* ******************* IMAGES ******************* */
 
 .mainImage {
   height: 302px;
   width: 302px;
-  margin: 23px 0px;
   border-radius: 8px;
-  background-color: hsl(178, 100%, 50%);
-  position: relative;
+  position: absolute;
+  top: 50%;
+  margin-top: -50%;
+  left: 50%;
+  margin-left: -50%;
 }
 
-.images {
+.images-container {
   position: relative;
+  padding: 0px;
+  margin: 23px 0px;
+  height: 302px;
+  width: 302px;
+  border-radius: 8px;
 }
 
 .imgTwo {
   position: absolute;
-  top: 0px;
-  left: 0px;
+  padding: 126px 127px;
+  top: 50%;
+  margin-top: -150px;
+  left: 50%;
+  margin-left: -151px;
+  border-radius: 8px;
+  background-color: hsla(178, 100%, 50%, 0.2);
+  transition: 0.5s ease;
+  opacity: 0;
+  z-index: 1;
+}
+
+.imgTwo:hover {
+  opacity: 1;
+  cursor: pointer;
 }
 
 .littleStuff img[alt='Ethereum'] {
@@ -179,10 +205,21 @@ h1 + p {
   }
 
   /* ******************* IMAGES ******************* */
-
+  .images-container {
+    height: 278px;
+    width: 278px;
+    margin-top: 23px;
+    margin-bottom: 10px;
+  }
   .mainImage {
     height: 278px;
     width: 278px;
     border-radius: 8px;
+  }
+
+  .imgTwo {
+    padding: 115px 115px;
+    margin-top: -139px;
+    margin-left: -139px;
   }
 }

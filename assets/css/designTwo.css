@@ -204,6 +204,10 @@ h1 + p {
     font-size: 14px;
   }
 
+  .creator {
+    margin: 8px 0px;
+  }
+
   /* ******************* IMAGES ******************* */
   .images-container {
     height: 278px;

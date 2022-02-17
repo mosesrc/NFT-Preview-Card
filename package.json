@@ -1,0 +1,19 @@
+{
+  "name": "nft-preview-card",
+  "version": "1.0.0",
+  "description": "FrontEndMentor Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mosesrc/NFT-Preview-Card.git"
+  },
+  "author": "Ryan Moses",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mosesrc/NFT-Preview-Card/issues"
+  },
+  "homepage": "https://github.com/mosesrc/NFT-Preview-Card#readme"
+}
